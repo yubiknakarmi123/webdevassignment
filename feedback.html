@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback</title>
+</head>
+<body>
+
+  <h2>Feedback Form</h2>
+
+  <form>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="full_name" placeholder="Enter your name" required><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label>Rating:</label><br>
+    <input type="radio" name="rating" value="very_satisfied" required> Very Satisfied<br>
+    <input type="radio" name="rating" value="satisfied"> Satisfied<br>
+    <input type="radio" name="rating" value="neutral"> Neutral<br>
+    <input type="radio" name="rating" value="unsatisfied"> Unsatisfied<br><br>
+
+    <label>Interests:</label><br>
+    <input type="checkbox" name="interests" value="web"> Web Development<br>
+    <input type="checkbox" name="interests" value="mobile"> Mobile Development<br>
+    <input type="checkbox" name="interests" value="ai"> AI & Machine Learning<br><br>
+
+    <label>Country:</label><br>
+    <select name="country" required>
+      <option value="">Select a country</option>
+      <option value="nepal">Nepal</option>
+      <option value="india">India</option>
+      <option value="usa">United States</option>
+      <option value="japan">Japan</option>
+    </select><br><br>
+
+    <label>Write your feedback here:</label><br>
+    <textarea name="feedback" placeholder="Feedback" required minlength="10" maxlength="500"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
