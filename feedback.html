@@ -1,46 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Feedback</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    label {
+      font-weight: bold;
+      display: block;
+      margin-top: 12px;
+    }
+  </style>
 </head>
 <body>
 
-  <h2>Feedback Form</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
 
-  <form>
+  <main>
 
-    <label>Full Name:</label><br>
-    <input type="text" name="full_name" placeholder="Enter your name" required><br><br>
 
-    <label>Email Address:</label><br>
-    <input type="email" name="email" placeholder="Enter your email" required><br><br>
+    <h2 id="feedback-title">Feedback Form</h2>
 
-    <label>Rating:</label><br>
-    <input type="radio" name="rating" value="very_satisfied" required> Very Satisfied<br>
-    <input type="radio" name="rating" value="satisfied"> Satisfied<br>
-    <input type="radio" name="rating" value="neutral"> Neutral<br>
-    <input type="radio" name="rating" value="unsatisfied"> Unsatisfied<br><br>
+    <p style="color: #555;">Please fill out the form below.</p>
 
-    <label>Interests:</label><br>
-    <input type="checkbox" name="interests" value="web"> Web Development<br>
-    <input type="checkbox" name="interests" value="mobile"> Mobile Development<br>
-    <input type="checkbox" name="interests" value="ai"> AI & Machine Learning<br><br>
+    <p class="highlight">We value your feedback!</p>
 
-    <label>Country:</label><br>
-    <select name="country" required>
-      <option value="">Select a country</option>
-      <option value="nepal">Nepal</option>
-      <option value="india">India</option>
-      <option value="usa">United States</option>
-      <option value="japan">Japan</option>
-    </select><br><br>
+    <div class="info-box">
+      <h2>Share Your Thoughts</h2>
+    </div>
 
-    <label>Write your feedback here:</label><br>
-    <textarea name="feedback" placeholder="Feedback" required minlength="10" maxlength="500"></textarea><br><br>
+    <div class="box">
+      <form>
 
-    <input type="submit" value="Submit">
+        <label>Full Name:</label>
+        <input type="text" name="full_name" placeholder="Enter your name" required><br><br>
 
-  </form>
+        <label>Email Address:</label>
+        <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label>Rating:</label>
+        <input type="radio" name="rating" value="very_satisfied" required> Very Satisfied<br>
+        <input type="radio" name="rating" value="satisfied"> Satisfied<br>
+        <input type="radio" name="rating" value="neutral"> Neutral<br>
+        <input type="radio" name="rating" value="unsatisfied"> Unsatisfied<br><br>
+
+        <label>Interests:</label>
+        <input type="checkbox" name="interests" value="web"> Web Development<br>
+        <input type="checkbox" name="interests" value="mobile"> Mobile Development<br>
+        <input type="checkbox" name="interests" value="ai"> AI & Machine Learning<br><br>
+
+        <label>Country:</label>
+        <select name="country" required>
+          <option value="">Select a country</option>
+          <option value="nepal">Nepal</option>
+          <option value="india">India</option>
+          <option value="usa">United States</option>
+          <option value="japan">Japan</option>
+        </select><br><br>
+
+        <label>Write your feedback here:</label>
+        <textarea name="feedback" placeholder="Feedback" required minlength="10" maxlength="500"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+
+
+    <div class="content-div">
+      <p>Thank you for taking the time to <span class="styled-text">share your thoughts</span>!</p>
+    </div>
+
+  </main>
 
 </body>
 </html>
